@@ -1,0 +1,27 @@
+{
+    "name": "Convoi",
+    "fields": [
+        {
+            "fieldName": "label",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "livraison",
+            "otherEntityRelationshipName": "convoi",
+            "relationshipName": "livraison"
+        }
+    ],
+    "changelogDate": "20200303164400",
+    "entityTableName": "convoi",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

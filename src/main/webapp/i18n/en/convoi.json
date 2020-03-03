@@ -1,0 +1,23 @@
+{
+  "stefitApp": {
+    "convoi": {
+      "home": {
+        "title": "Convois",
+        "createLabel": "Create a new Convoi",
+        "createOrEditLabel": "Create or edit a Convoi",
+        "notFound": "No Convois found"
+      },
+      "created": "A new Convoi is created with identifier {{ param }}",
+      "updated": "A Convoi is updated with identifier {{ param }}",
+      "deleted": "A Convoi is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Convoi {{ id }}?"
+      },
+      "detail": {
+        "title": "Convoi"
+      },
+      "label": "Label",
+      "livraison": "Livraison"
+    }
+  }
+}

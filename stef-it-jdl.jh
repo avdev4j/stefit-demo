@@ -1,0 +1,42 @@
+entity Convoi {
+label String
+}
+
+entity Livraison {
+code String,
+poids Float,
+datelivraison LocalDate,
+status StatutLivraison
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity Client {
+nom String,
+adresse String,
+postalCode String,
+city String
+}
+
+enum StatutLivraison {
+   EN_PREPARATION, PRET, EXPEDIE, RECU
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+Convoi{livraison} to Livraison{Convoi(label)},
+/**
+* A relationship
+*/
+Client{livraison} to Livraison{client(nom)}
+}
+
+// Set pagination options
+paginate Livraison with infinite-scroll
+paginate Convoi, Client with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl

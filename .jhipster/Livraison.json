@@ -1,0 +1,48 @@
+{
+    "name": "Livraison",
+    "fields": [
+        {
+            "fieldName": "code",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "poids",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "datelivraison",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "StatutLivraison",
+            "fieldValues": "EN_PREPARATION,PRET,EXPEDIE,RECU"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "convoi",
+            "otherEntityRelationshipName": "livraison",
+            "relationshipName": "convoi",
+            "otherEntityField": "label"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "client",
+            "otherEntityRelationshipName": "livraison",
+            "relationshipName": "client",
+            "otherEntityField": "nom"
+        }
+    ],
+    "changelogDate": "20200303164500",
+    "entityTableName": "livraison",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

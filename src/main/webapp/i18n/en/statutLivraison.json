@@ -1,0 +1,11 @@
+{
+  "stefitApp": {
+    "StatutLivraison": {
+      "null": "",
+      "EN_PREPARATION": "EN_PREPARATION",
+      "PRET": "PRET",
+      "EXPEDIE": "EXPEDIE",
+      "RECU": "RECU"
+    }
+  }
+}
